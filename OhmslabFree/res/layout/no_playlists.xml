@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:orientation="vertical"
+  	android:baselineAligned="false"
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent"
+  	android:contentDescription="@string/hello">
+    
+    <RelativeLayout 
+    	android:layout_width="fill_parent" 
+    	android:layout_height="55dp"
+    	android:background="@drawable/titlebar">
+    	
+    	<ImageView 
+    		android:id="@+id/backButton"		
+    		android:layout_width="40dp"
+    		android:layout_height="40dp"
+    		android:layout_alignParentLeft="true"
+    		android:layout_centerVertical="true"
+    		android:layout_marginLeft="5dp"
+    		android:src="@drawable/bs_back"
+    		android:contentDescription="@string/hello"/>
+    			
+    	<ImageView 
+    		android:id="@+id/newButton"		
+    		android:layout_width="40dp"
+    		android:layout_height="40dp"
+    		android:layout_alignParentRight="true"
+    		android:layout_centerVertical="true"
+    		android:layout_marginRight="5dp"
+    		android:src="@drawable/bs_newplaylist"
+    		android:contentDescription="@string/hello"/>
+    		
+    	<TextView 	
+    		android:layout_width="220dp"
+    		android:layout_height="wrap_content"
+    		android:textColor="#ffffff"
+    		android:textSize="25dp"
+    		android:layout_centerInParent="true"
+    		android:gravity="center"
+    		android:singleLine="true"
+    		android:typeface="sans"
+    		android:id="@+id/playlistNumber"/>
+    	
+    </RelativeLayout>
+    
+    <ImageView 
+        android:id="@+id/emptyImage"
+        android:layout_width="fill_parent"
+        android:layout_height="320dp"
+        android:src="@drawable/empty_playlist"
+        android:contentDescription="@string/hello"/>
+    <RelativeLayout 
+    		android:layout_width="fill_parent" 
+    		android:layout_height="165dp"
+    		android:background="@drawable/lists_bottom"> 
+    		<TextView 	
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:textColor="#ffffff"
+    		android:textSize="30dp"
+    		android:layout_centerInParent="true"
+    		android:gravity="center"
+    		android:text="@string/empty_playlist_space"
+    		android:singleLine="true"
+    		android:typeface="sans"/>
+    </RelativeLayout>
+
+</LinearLayout>

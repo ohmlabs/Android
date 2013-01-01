@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+    android:id="@+id/selectedMusic"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+    
+    <ImageView 
+        android:id="@+id/photo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:contentDescription="@string/album_art"/>
+    <TextView 
+        android:id="@+id/firstText"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:singleLine="true"
+        android:typeface="sans"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@id/photo"/>
+    <TextView 
+        android:id="@+id/secondText"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:singleLine="true"
+        android:textSize="15dp"
+        android:typeface="sans"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@id/photo"
+        android:layout_below="@id/firstText"/>
+
+</RelativeLayout>
+
+    <ListView 
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:background="@drawable/list"/>
+<Button
+    android:id="@+id/newPlaylist"
+    android:layout_height="40dp"
+    android:layout_width="fill_parent"
+    android:layout_margin="5dp"
+    android:text="Add to New Playlist"/>
+</LinearLayout>

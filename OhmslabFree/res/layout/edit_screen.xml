@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:orientation="vertical"
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent"
+  	android:baselineAligned="false">
+  
+	<RelativeLayout 
+		android:layout_width="fill_parent" 
+    	android:layout_height="55dp"
+    	android:background="@drawable/titlebar">
+    	
+    	<Button 
+    		android:id="@+id/doneButton"		
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_alignParentLeft="true"
+    		android:layout_centerVertical="true"
+    		android:text="@string/done_button"
+    		android:layout_marginLeft="5dp"
+    		android:contentDescription="@string/back_button_description"/>
+    			
+    	<Button 
+    		android:id="@+id/undoButton"		
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_alignParentRight="true"
+    		android:layout_centerVertical="true"
+    		android:layout_marginRight="5dp"
+    		android:text="@string/undo_button"
+    		android:contentDescription="@string/action_button_description"/>	
+    	
+    	<TextView 
+    		android:id="@+id/edit_list_name"		
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_centerInParent="true"
+    		android:textSize="30dp"
+    		android:typeface="sans"/>	
+    
+	</RelativeLayout>
+    
+	<LinearLayout
+      	android:id="@+id/listholder"
+        android:layout_width="fill_parent" 
+        android:layout_height="0dp"
+        android:background="@drawable/list"
+        android:layout_weight="1">
+        
+		<com.ohmslab.dragndrop.DragNDropListView
+		  	android:id="@+id/list"
+			android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@drawable/divider"/>
+    
+	</LinearLayout>
+    <RelativeLayout 
+		android:layout_width="fill_parent" 
+    	android:layout_height="55dp"
+    	android:background="@drawable/titlebar">
+    	
+    	<Button 
+    		android:id="@+id/deleteButton"		
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_alignParentLeft="true"
+    		android:layout_centerVertical="true"
+    		android:text="Delete"
+    		android:layout_marginLeft="5dp"
+    		android:contentDescription="@string/back_button_description"/>
+    			
+    	<Button 
+    		android:id="@+id/renameButton"		
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_alignParentRight="true"
+    		android:layout_centerVertical="true"
+    		android:layout_marginRight="5dp"
+    		android:text="Rename"
+    		android:contentDescription="@string/action_button_description"/>	
+    	
+    	<Button 
+    		android:id="@+id/clearButton"		
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_centerInParent="true"
+    		android:text="Clear"
+    		android:textSize="30dp"
+    		android:typeface="sans"/>	
+    
+	</RelativeLayout>
+</LinearLayout>
+

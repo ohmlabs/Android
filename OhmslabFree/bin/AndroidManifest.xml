@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ohmfree"
+    android:versionCode="5"
+    android:versionName="1.0.1" >
+	<supports-screens
+			android:largeScreens="false"/>
+	<uses-sdk android:minSdkVersion="8"/>
+		<uses-permission android:name="android.permission.INTERNET" />
+		
+		<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+		
+		<uses-permission android:name="android.permission.VIBRATE"/>
+		
+		<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+		<uses-permission android:name="android.permission.BROADCAST_STICKY" />
+   		<application 
+   				android:name="com.ohmfree.ApplicationObject" 
+   				android:icon="@drawable/icon" 
+   				android:label="OhmMusic Free">
+        
+        		<activity 
+        				android:name=".NowPlayingScreen"
+                		android:label="Ohm Free"
+                		android:screenOrientation="portrait"
+                		android:theme="@android:style/Theme.NoTitleBar"
+                		android:clearTaskOnLaunch="true"
+                		android:launchMode="singleTask">
+        				
+        				<intent-filter>
+                				<action android:name="com.ohmfree.music.endsong"/>
+               					<action android:name="android.intent.action.MAIN" />
+                				
+                				<category android:name="android.intent.category.LAUNCHER" />
+            	
+            			</intent-filter>
+        
+        		</activity>
+        		
+        		
+        		<service android:name="com.ohmfree.OhmPlaybackService"
+        		    	 android:process=":remote"></service>
+        		<service android:name="com.google.gdata.client.youtube.YouTubeService"
+        		    	 android:process=":search"></service>
+				<activity 
+						android:name=".YoutubeScreen" 
+						android:launchMode="singleTop"
+						android:screenOrientation="portrait"
+						android:theme="@android:style/Theme.NoTitleBar"></activity>
+				<activity 
+						android:name=".LoginScreen" 
+						android:screenOrientation="portrait"
+						android:theme="@android:style/Theme.NoTitleBar"></activity>
+				<activity 
+						android:name=".MusicGallery" 
+						android:noHistory="true"
+						android:screenOrientation="portrait"
+						android:theme="@android:style/Theme.NoTitleBar">
+				    <intent-filter>
+                				<action android:name="com.ohmfree.music.endsong"/>
+            		</intent-filter>
+				</activity>
+				<activity 
+						android:name=".NewMusicGallery" 
+						android:noHistory="true"
+						android:screenOrientation="portrait"
+						android:theme="@android:style/Theme.NoTitleBar">
+				    <intent-filter>
+                				<action android:name="com.ohmfree.music.endsong"/>
+            		</intent-filter>
+				</activity>
+				<activity 
+						android:name=".NoPlaylists" 
+						android:noHistory="true"
+						android:screenOrientation="portrait"
+						android:theme="@android:style/Theme.NoTitleBar">
+				    <intent-filter>
+                				<action android:name="com.ohmfree.music.endsong"/>
+            		</intent-filter>
+				</activity>
+				<activity 
+						android:name=".PhotoScreen" 
+						android:launchMode="singleTop"
+						android:screenOrientation="portrait"></activity>	
+				<activity 
+				
+						android:name=".MusicLibrary" 
+						android:noHistory="true"
+						android:screenOrientation="portrait"
+						android:theme="@android:style/Theme.NoTitleBar">
+				    <intent-filter>
+                				<action android:name="com.ohmfree.music.endsong"/>
+            		</intent-filter>
+				</activity>
+		
+				<activity 
+						android:name=".PlaylistsScreen" 
+						android:noHistory="true"
+						android:screenOrientation="portrait"
+						android:theme="@android:style/Theme.NoTitleBar">
+				    <intent-filter>
+                				<action android:name="com.ohmfree.music.endsong"/>
+            		</intent-filter>
+				</activity>
+		
+				<activity 
+						android:name=".MusicLibraryArtists" 
+						android:noHistory="true"
+						android:screenOrientation="portrait"
+						android:theme="@android:style/Theme.NoTitleBar"></activity>
+		
+				<activity 
+						android:name=".MusicLibraryAlbums" 
+						android:noHistory="true"
+						android:screenOrientation="portrait"
+						android:theme="@android:style/Theme.NoTitleBar"></activity>
+		
+				<activity 
+						android:name=".MusicLibrarySongs" 
+						android:noHistory="true"
+						android:screenOrientation="portrait"
+						android:theme="@android:style/Theme.NoTitleBar"></activity>
+		
+				<activity 
+						android:name=".QueueScreen" 
+						android:noHistory="true"
+						android:screenOrientation="portrait"
+						android:theme="@android:style/Theme.NoTitleBar">
+				    <intent-filter>
+                				<action android:name="com.ohmfree.music.endsong"/>
+            		</intent-filter>
+				</activity>
+				<activity 
+						android:name=".EditScreen" 
+						android:noHistory="true"
+						android:screenOrientation="portrait"
+						android:theme="@android:style/Theme.NoTitleBar"></activity>
+		
+			<receiver android:name="com.ohmfree.MediaAppWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.ohmfree.music.METADATA" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidget_info" />
+        </receiver>
+    
+    	
+    	</application>
+
+</manifest>

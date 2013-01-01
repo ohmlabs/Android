@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content">
+<TextView 
+    android:id="@+id/prompt" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:text="@string/create_playlist_title" 
+    android:layout_marginTop="8dip" 
+    android:layout_marginBottom="8dip" 
+    android:layout_marginLeft="8dip" 
+    android:layout_marginRight="8dip"/>
+
+
+<EditText 
+    android:id="@+id/playlist" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:hint="@string/create_playlist"
+    android:singleLine="true" 
+    android:layout_marginBottom="8dip" 
+    android:layout_marginLeft="8dip" 
+    android:layout_marginRight="8dip"
+	android:capitalize="characters"/>
+
+
+<RelativeLayout 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:padding="3dp" 
+    android:background="#ffffff">
+<Button 
+    android:id="@+id/create" 
+    android:layout_width="130dp" 
+    android:layout_height="wrap_content" 
+    android:text="@string/create" 
+    android:layout_alignParentLeft="true"/>
+
+<Button 
+    android:id="@+id/cancel" 
+    android:layout_width="130dp" 
+    android:layout_height="wrap_content" 
+    android:text="@string/cancel" 
+    android:layout_alignParentRight="true"/>
+</RelativeLayout>
+</LinearLayout>
