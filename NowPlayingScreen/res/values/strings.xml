@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="back_button_description">Home Navigation Button</string>
+    <string name="app_name">OhmMusic</string>
+    <string name="action_button_description">Action Button</string>
+    <string name="shuffle_button_description">Shuffle Button</string>
+    <string name="music_button_description">Music Navigation Button</string>
+    <string name="lists_button_description">PlayLists Navigation Button</string>
+    <string name="queue_button_description">Queue Navigation Button</string>
+    <string name="all_songs_text">All Songs</string>
+    <string name="flip_button_description">Music Flip Button</string>
+    <string name="now_playing_description">OhmMusic</string>
+    <string name="queue_songs_number">Number of Songs in Queue</string>
+    <string name="drag_album_art">Drag Album Art</string>
+    <string name="album_art">Album Art</string>
+    <string name="action_play">Play Action</string>
+    <string name="action_add_queue">Add to Queue</string>
+    <string name="action_add_playlist">Add to PlayList</string>
+    <string name="shuffle_all">Shuffle All</string>
+    <string name="action_clear">Clear Action</string>
+    <string name="action_delete">Delete Action</string>
+    <string name="action_save">Save Action</string>
+    <string name="action_rename">Rename Action</string>
+    <string name="hello">Hello</string>
+    <string name="no_playlists">No Playlists, Press + for New Playlist</string>
+    <string name="how_to_crop">How to Select and Crop Image</string>
+    <string name="select_image">Select a New Photo</string>
+    <string name="cropped_art">Cropped Photo</string>
+    <string name="use_image">Use this Photo</string>
+    <string name="done_button">Done</string>
+    <string name="undo_button">Undo</string>
+    <string name="empty_playlist_space">Empty Playlist Space</string>
+    <string name="create_playlist">playlist name</string>
+   	<string name="create_playlist_title">Enter the Playlist name : </string>
+   	<string name="create">Create</string>
+   	<string name="cancel">Cancel</string>
+   	<string name="empty_string">BlahBlahBlah</string>
+   	<string name="edit_queue">Edit Queue</string>
+   	<string name="shuffle_queue">Shuffle Queue</string>
+   	<string name="clear_queue">Clear Queue</string>
+   	<string name="save_queue">Save Queue as Playlist</string>
+   	<string name="tab_image">Tab Icon</string>
+   	<string name="change_photo">Change Playlist Photo</string>
+</resources>

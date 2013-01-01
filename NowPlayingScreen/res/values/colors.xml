@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<color name="electric_blue">#0067A5</color>
+<color name="color1"> #89CFF0</color>
+<color name="color2"> #C0E1C0 </color>
+<color name="color3"> #1BA3BE </color>
+<color name="color4"> #8781BD </color>
+<color name="color5"> #C76CAB</color>
+<color name="color6"> #9ECBCF </color>
+<color name="color7"> #CCCCFF </color>
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:layout_gravity="center_horizontal"
+    android:padding ="10dp">
+    
+    <RelativeLayout
+    android:id="@+id/selectedMusic"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true">
+    
+    <ImageView 
+        android:id="@+id/playlistArt"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:contentDescription="@string/album_art"/>
+    <TextView 
+        android:id="@+id/playlistName"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:typeface="sans"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@id/playlistArt"/>
+    <TextView 
+        android:id="@+id/songNumber"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:singleLine="true"
+        android:typeface="sans"
+        android:textSize="15dp"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@id/playlistArt"
+        android:layout_below="@id/playlistName"/>
+
+</RelativeLayout>
+    
+    <Button
+        android:id="@+id/editButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Playlist"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/selectedMusic"
+        />
+    <Button
+        android:id="@+id/shuffleButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Shuffle Playlist"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editButton"
+        />
+  	 <Button
+         android:id="@+id/toQueueButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Playlist to Queue"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/shuffleButton"
+        />
+
+    
+    
+
+</RelativeLayout>

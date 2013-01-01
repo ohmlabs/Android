@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="15dp"
+    android:background="@drawable/trans_black"
+    android:gravity="center_vertical" >
+
+    <LinearLayout
+        android:id="@+id/widgetMusic"
+        android:layout_height="60dp"
+        android:layout_width="190dp"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+        <TextView 
+            android:id="@+id/widgetArtist"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textSize="15dp"
+            android:typeface="sans"
+            android:singleLine="true"
+            android:layout_margin="2dp"
+            android:text="Nothing"/>
+        <TextView 
+            android:id="@+id/widgetSong"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textSize="15dp"
+            android:typeface="sans"
+            android:singleLine="true"
+            android:layout_margin="2dp"
+            android:text="Playing"/>
+    </LinearLayout>
+    <ImageView 
+        android:id="@+id/widgetPlayPause"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/bs_widgetplay"/>
+    <ImageView 
+        android:id="@+id/widgetNext"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/bs_widgetnext"/>
+
+</LinearLayout>

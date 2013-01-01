@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+ 	android:orientation="vertical"
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent"
+  	android:id="@+id/container"
+  	android:background="#00000000">
+     	
+    <RelativeLayout 
+     	android:layout_width="fill_parent"
+    	android:layout_height="120dp"
+		android:background="@drawable/gallery">	
+    	
+    <RelativeLayout
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="55dp"
+    	    android:id="@+id/topnav">
+    	<ImageView 
+    		android:id="@+id/backButton"		
+    		android:layout_width="40dp"
+    		android:layout_height="40dp"
+    		android:layout_centerVertical="true"
+    		android:layout_alignParentLeft="true"
+    		android:layout_marginLeft="5dp"
+    		android:src="@drawable/bs_back"
+    		android:contentDescription="@string/back_button_description"/>	
+    			<ImageView 
+    			android:id="@+id/shuffleallbutton"		
+    			android:layout_width="100dp"
+    			android:layout_height="40dp"
+    			android:layout_centerInParent="true"
+    			android:contentDescription="@string/shuffle_button_description"
+    			android:src="@drawable/bs_shuffle"/>		
+    	<ImageView 
+    		android:id="@+id/libraryButton"		
+    		android:layout_width="40dp"
+    		android:layout_height="40dp"
+    		android:layout_centerVertical="true"
+    		android:layout_marginRight="5dp"
+    		android:layout_alignParentRight="true"
+    		android:contentDescription="@string/flip_button_description"
+    		android:src="@drawable/bs_search"/>	
+    </RelativeLayout>				
+	
+    	
+    <Gallery 
+    	android:id="@+id/gallery_artist"
+    	android:layout_width="fill_parent"
+    	android:layout_height="65dp"
+    	android:layout_gravity="center_horizontal"
+    	android:layout_below="@id/topnav"
+		android:background="@android:color/transparent"
+		android:cacheColorHint="#00000000"/>
+
+</RelativeLayout>
+	<customviews.classes.AToZTouchView 
+    	android:id="@+id/atoz"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+		android:background="@drawable/az"/>
+<RelativeLayout 
+				android:layout_width="fill_parent"
+      			android:layout_height="145dp"
+      			android:background="@drawable/gallery_albums">
+	<customviews.classes.HorizontalListView
+		android:id="@+id/albumGallery"
+		android:layout_width="fill_parent"
+    	android:layout_height="100dp"
+		android:cacheColorHint="#00000000"
+		/>
+		<RelativeLayout 
+				android:id="@+id/header"
+				android:layout_width="fill_parent"
+				android:layout_below="@id/albumGallery"
+      			android:layout_height="45dp"
+      			android:background="@android:color/transparent">
+    	
+    	<TextView 
+    			android:id="@+id/headerText"
+				android:layout_width="200dp"
+			    android:layout_height="wrap_content"
+			    android:textSize="15dp"
+			    android:textColor="#ffffff"
+			    android:singleLine="true" 
+			    android:textStyle="bold"
+			    android:typeface="sans"
+			    android:gravity="center"
+			    android:layout_centerInParent="true"
+			    android:layout_margin="5dp"/>	
+					
+		
+		</RelativeLayout>	
+</RelativeLayout>		
+	
+
+	
+		
+	<LinearLayout 
+	    android:layout_height="0dp"
+	    android:layout_width="fill_parent"
+	    android:layout_weight="1"
+	    android:background="@drawable/list">
+	    <ListView
+		  	android:id="@+id/list"
+			android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@drawable/divider"/>
+		  
+	</LinearLayout>
+				
+		
+
+    
+		
+</LinearLayout>

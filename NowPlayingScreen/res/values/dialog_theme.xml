@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="dialog_theme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/trans_black</item>
+        <item name="android:windowAnimationStyle">@style/ActionDialogAnimation</item>
+    </style>
+    
+	<style name="ActionDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/push_up_in</item>
+        <item name="android:windowExitAnimation">@anim/push_down_out</item>
+    </style>
+</resources>

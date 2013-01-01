@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@android:id/tabhost"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<LinearLayout
+  		android:orientation="vertical"
+  		android:layout_width="fill_parent"
+  		android:layout_height="fill_parent"
+  		android:background="@android:color/white">
+  	
+  		<RelativeLayout 
+  			android:layout_width="fill_parent" 
+    		android:layout_height="55dp"
+    		android:background="@drawable/titlebar">
+    			
+			<ImageView 
+			    android:contentDescription="@string/back_button_description"
+    			android:id="@+id/npNav"		
+    			android:layout_width="40dp"
+    			android:layout_height="40dp"
+    			android:layout_alignParentLeft="true"
+    			android:layout_marginLeft="5dp"
+    			android:layout_centerVertical="true"
+    			android:src="@drawable/bs_back"/>	
+    					
+    		<ImageView 
+    		    android:contentDescription="@string/flip_button_description"
+    			android:id="@+id/musicNav"		
+    			android:layout_width="40dp"
+    			android:layout_height="40dp"
+    			android:layout_marginRight="5dp"
+    			android:layout_alignParentRight="true"
+    			android:layout_centerVertical="true"
+    			android:src="@drawable/bs_music"/>	
+		
+    		<ImageView 
+    		    android:contentDescription="@string/shuffle_all"
+    			android:id="@+id/shuffleAllButton"		
+    			android:layout_width="100dp"
+    			android:layout_height="40dp"
+    			android:layout_centerInParent="true"
+    			android:src="@drawable/bs_shuffle"/>	
+			
+		</RelativeLayout>
+
+		<FrameLayout
+			android:id="@android:id/tabcontent"
+			android:layout_width="fill_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"/>
+			
+		<TabWidget
+			android:id="@android:id/tabs"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/titlebar"
+			android:tabStripEnabled="false"/>
+			
+	</LinearLayout>
+	
+</TabHost>

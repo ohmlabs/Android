@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:padding ="10dp">
+<RelativeLayout
+    android:id="@+id/selectedSong"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true">
+    
+    <ImageView 
+        android:id="@+id/albumArt"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:contentDescription="@string/album_art"/>
+    <TextView 
+        android:id="@+id/songName"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:singleLine="true"
+        android:typeface="sans"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@id/albumArt"/>
+    <TextView 
+        android:id="@+id/artistName"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:singleLine="true"
+        android:typeface="sans"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@id/albumArt"
+        android:layout_below="@id/songName"/>
+
+</RelativeLayout>
+    <Button
+        android:id="@+id/toQueueButton"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="Add Song To Queue"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/selectedSong"
+        />
+
+     <Button
+         android:id="@+id/toPlaylistButton"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="Add Song To Playlist"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/toQueueButton"
+        />
+     <Button
+         android:id="@+id/toMusicButton"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text=""
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/toPlaylistButton"
+        />
+    
+    
+
+</RelativeLayout>

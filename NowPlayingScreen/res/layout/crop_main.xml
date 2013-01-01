@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+	<TextView  
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginBottom="10dp"
+	    android:gravity="center"
+	    android:textStyle="bold"
+	    android:textSize="17sp"
+	    android:typeface="sans"
+	    android:text="@string/how_to_crop"/>
+	    
+	<Button 
+		android:id="@+id/btn_crop"
+		android:layout_width="match_parent" 		 
+		android:layout_height="wrap_content"
+		android:text="@string/select_image" />
+	<Button 
+		android:id="@+id/btn_rotate"
+		android:layout_width="match_parent" 		 
+		android:layout_height="wrap_content"
+		android:text="Rotate Image" />
+	<ImageView
+		android:id="@+id/iv_photo"
+		android:layout_marginTop="10dp"
+		android:layout_gravity="center_horizontal"
+		android:layout_width="fill_parent" 		 
+		android:layout_height="200dp"
+		android:contentDescription="@string/cropped_art"/>
+	
+	<Button 
+		android:id="@+id/btn_done"
+		android:layout_width="match_parent" 		 
+		android:layout_height="wrap_content"
+		android:text="@string/use_image" />
+		
+</LinearLayout>

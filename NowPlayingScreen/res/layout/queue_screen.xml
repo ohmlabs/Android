@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:orientation="vertical"
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent"
+  	android:background="@drawable/list">
+  
+	<RelativeLayout 
+		android:layout_width="fill_parent" 
+    	android:layout_height="55dp"
+    	android:background="@drawable/titlebar">
+    	
+    	<ImageView 
+    		android:id="@+id/ohmButton"		
+    		android:layout_width="40dp"
+    		android:layout_height="40dp"
+    		android:layout_alignParentLeft="true"
+    		android:layout_centerVertical="true"
+    		android:src="@drawable/bs_back"
+    		android:layout_marginLeft="5dp"
+    		android:contentDescription="@string/back_button_description"/>
+    			
+    	<ImageView 
+    		android:id="@+id/actionButton"		
+    		android:layout_width="40dp"
+    		android:layout_height="40dp"
+    		android:layout_alignParentRight="true"
+    		android:layout_centerVertical="true"
+    		android:src="@drawable/bs_action"
+    		android:layout_marginRight="5dp"
+    		android:contentDescription="@string/action_button_description"/>	
+    	
+    	<TextView 
+    		android:id="@+id/queue_number_songs"		
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_centerInParent="true"
+    		android:typeface="sans"
+    		android:textSize="25dp"/>	
+    
+	</RelativeLayout>
+    
+		<ListView
+		  	android:id="@+id/list"
+			android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@drawable/divider"
+            android:fastScrollEnabled="true"/>
+
+</LinearLayout>
+

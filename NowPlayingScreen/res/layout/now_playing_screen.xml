@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+  		android:layout_width="fill_parent"
+ 		android:layout_height="fill_parent">
+		
+		<RelativeLayout 
+				android:id="@+id/topofnav" 
+    			android:layout_width="fill_parent" 
+    			android:layout_height="55dp"
+    			android:background="@drawable/titlebar">
+    				 	
+    	<ImageView 
+    	    android:contentDescription="@string/app_name"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:src="@drawable/jon_logo"
+    	    android:layout_centerInParent="true"/>
+    	<ImageView 
+    		android:id="@+id/searchButton"		
+    		android:layout_width="40dp"
+    		android:layout_height="40dp"
+    		android:layout_alignParentRight="true"
+    		android:layout_centerVertical="true"
+    		android:layout_marginRight="5dp"
+    		android:src="@drawable/bs_search"
+    		android:contentDescription="@string/hello"/>
+    		
+		</RelativeLayout>
+		
+    		
+    	<RelativeLayout 
+				android:layout_width="fill_parent" 
+    			android:id="@+id/bottomofnav" 
+    			android:layout_height="98dp"
+    			android:background="@drawable/jon_nav_two"
+    			android:layout_below="@id/topofnav">
+    		
+    			<View 
+    					android:id="@+id/playlistsnavbutton"		
+    					android:layout_width="107dp"
+    					android:layout_height="98dp"
+    					android:layout_alignParentLeft="true"
+    					android:background="@drawable/nav_button"/>
+ 	
+    			<View 
+    					android:id="@+id/musicnavbutton"		
+    					android:layout_width="105dp"
+    					android:layout_height="98dp"
+    					android:layout_centerInParent="true"
+    					android:background="@drawable/nav_button"/>
+    					
+    			<View 
+    					android:id="@+id/queuenavbutton"		
+    					android:layout_width="107dp"
+    					android:layout_height="98dp"
+    					android:layout_alignParentRight="true"
+    					android:background="@drawable/nav_button"/>
+		
+		</RelativeLayout>
+  
+		
+		<RelativeLayout 
+				android:id="@+id/songspace" 
+  				android:layout_width="fill_parent" 
+    			android:layout_height="wrap_content"
+    			android:background="@drawable/nowplaying_asset"
+    			android:layout_below="@id/bottomofnav">
+    	
+
+				<customviews.classes.NowPlayingSwitcher 
+    					android:id="@+id/now_playing_switcher"
+    					android:layout_width="fill_parent"
+    					android:layout_height="wrap_content"
+						android:background="@android:color/transparent"
+						android:padding="5dp"/>
+				
+		
+		
+
+    					<RelativeLayout 
+    							android:layout_width="fill_parent"
+    							android:id="@+id/songselector"
+    				 			android:layout_height="wrap_content"
+    				 			android:layout_alignParentBottom="true"	
+    				 			android:background="@drawable/nowplaying_back"
+    				 			android:padding="5dp">
+    				 			
+    				 			
+    				 			<RelativeLayout 
+    				 			    android:layout_width="280dp"
+    				 			    android:layout_height="wrap_content"
+    				 			    android:layout_centerInParent="true">
+    				 			<TextView 
+    									android:id="@+id/npartist"		
+    									android:layout_width="wrap_content"
+    									android:layout_height="wrap_content"
+    									android:layout_centerHorizontal="true"
+    									android:textSize="15dp"
+    									android:singleLine="true"
+    									android:textStyle="bold"
+    									android:typeface="sans"
+    									android:textColor="#ffffff"/>
+    				
+    							<TextView 
+    									android:id="@+id/npsong"		
+    									android:layout_width="wrap_content"
+    									android:layout_height="wrap_content"
+    									android:layout_centerHorizontal="true"
+    									android:typeface="sans"
+    									android:layout_below="@id/npartist"
+    									android:textSize="15dp"
+    									android:textStyle="bold"
+    									android:singleLine="true"
+    									android:textColor="#ffffff"/>
+    				 			</RelativeLayout>
+    							
+    							
+    					</RelativeLayout>
+		<RelativeLayout 
+    					android:layout_width="fill_parent" 
+    				 	android:id="@+id/nowplaybackcontrols" 
+    				 	android:layout_height="wrap_content"	
+						android:layout_below="@id/bottomofnav"
+    				 	android:background="@drawable/trans_black"
+    				 	android:visibility="gone"
+    				 	android:padding="5dp">  		
+    				 	
+    			<SeekBar 
+						android:id="@+id/npplayback"
+						android:layout_width="200dp" 
+						android:layout_height="wrap_content"
+						android:layout_centerInParent="true"
+						android:progressDrawable="@drawable/progress_drawable"
+						android:thumb="@drawable/transparency"/>
+								
+    		<ImageView 
+    		    android:id="@+id/repeat"
+    	    	android:layout_width="40dp"
+    	    	android:layout_height="40dp"
+    	    	android:layout_margin="5dp"
+    	    	android:src="@drawable/repeat_up"
+    	    	android:layout_alignParentLeft="true"/>
+    		<ImageView 
+    		    android:id="@+id/shuffle"
+    	    	android:layout_width="40dp"
+    	    	android:layout_height="40dp"
+    	    	android:layout_margin="5dp"
+    	    	android:src="@drawable/shuffle_down"
+    	    	android:layout_alignParentRight="true"/>
+		</RelativeLayout>	
+    	</RelativeLayout>	
+    			 
+   
+    			 
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:layout_gravity="center_horizontal"
+    android:padding ="10dp">
+    <RelativeLayout
+    android:id="@+id/selectedMusic"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="5dp">
+    
+    <TextView 
+        android:id="@+id/queueName"
+        android:layout_width="wrap_content"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:typeface="sans"/>
+	<TextView 
+        android:id="@+id/songNumber"
+        android:layout_width="wrap_content"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:typeface="sans"
+        android:layout_below="@id/queueName"/>
+	
+</RelativeLayout>
+    <Button
+        android:id="@+id/editButton"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="Edit Queue"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/selectedMusic"/>
+    
+    <Button
+        android:id="@+id/shuffleButton"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="Shuffle Queue"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editButton"/>
+    
+    <Button
+        android:id="@+id/toPlaylistButton"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="Add Queue To Playlist"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/shuffleButton"/>
+    
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="Save Queue As Playlist"
+       	android:layout_centerHorizontal="true"
+       	android:layout_below="@id/toPlaylistButton"/>
+
+</RelativeLayout>
