@@ -48,7 +48,7 @@ public class NowPlayingScreen extends Activity implements ViewFactory, MusicUtil
 	MusicReceiver np_updater;
 	PlaylistDialogAdapter mAdapter;
 	Bitmap albumart = null;
-	Counter counter;
+	Counter counter = null;
 	boolean receiver = false;
 	ImageView repeatImage;
 	ImageView shuffleImage;
@@ -66,8 +66,8 @@ public class NowPlayingScreen extends Activity implements ViewFactory, MusicUtil
 			receiver = false;
 			this.unregisterReceiver(np_updater);
 		}
-		
-		counter.stopStart();
+		if(counter!=null)
+			counter.stopStart();
 	}
 	
 	@Override

@@ -221,8 +221,8 @@ public boolean setCurrentPlaylistId(long id){
 				}
 
 			}
-			    
-			cursor.close();
+			if(cursor!=null)    
+				cursor.close();
 		  
 			return true;
 	   }
